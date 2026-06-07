@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <h2>My Portfolio</h2>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#todo">To-Do</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+            <!-- To-Do List -->
+    <section id="todo" class="todo-section">
+        <h2>Dynamic To-Do List</h2>
+
+        <div class="todo-container">
+            <input type="text" id="taskInput" placeholder="Enter a task">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+
+        <form id="contactForm">
+
+            <input type="text" id="name" placeholder="Enter Name">
+            <small class="error" id="nameError"></small>
+
+            <input type="email" id="email" placeholder="Enter Email">
+            <small class="error" id="emailError"></small>
+
+            <input type="tel" id="phone" placeholder="Enter Phone Number">
+            <small class="error" id="phoneError"></small>
+
+            <textarea id="message" placeholder="Enter Message"></textarea>
+            <small class="error" id="messageError"></small>
+
+            <button type="submit">Submit</button>
+
+            <p id="successMessage"></p>
+
+        </form>
+    </section>
+
+    <script src="script1.js"></script>
+</body>
+</html>
